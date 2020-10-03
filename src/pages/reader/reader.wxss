@@ -1,0 +1,34 @@
+/*********catelog style*****/
+@import "../share/catelog/catelog.wxss"; 
+.container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.container .header{
+  height: 20px;
+  margin: 0 20px;
+  line-height: 20px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .header text{
+  color:#634102;
+}
+.container .content {
+  display: block;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  /* -moz-column-rule:1px solid #a3cfff; */
+  /* column-rule:1px solid #a3cfff; */
+  column-gap: 60rpx;
+  padding: 20rpx 18rpx 0 42rpx;
+  position: relative;
+  }
+  .content text{
+     color: #000800;
+  }
+
+

@@ -1,0 +1,36 @@
+
+  <template name="tmp">
+      <view class='row'  data-Id="{{Id}}" >
+        <image class='rowIcon' src="{{Icon}}" ></image>
+        <view class='rowDesc'>
+          <text>{{Title}}</text>
+          <text>{{'最新：第'+ LatestSerialNumber+'章 ' +LatestChapterName}}</text>
+        </view>
+      </view>
+      <view class="line"></view>
+  </template>
+<view class='container'>
+  <view class="loading" hidden='{{!refreshing}}'><span></span><span></span><span></span><span></span><span></span></view>
+  <scroll-view  class="scrollContainer" scroll-y="true" style="height: {{windowHeight}}px;" bindscrolltoupper="refesh">
+        <view wx:for="{{list}}" style="margin:20rpx;" wx:for-item="item"
+        bindtap="clickDetail"  bindlongpress="removeBookshelf" data-Index="{{index}}" 
+          data-Id="{{item.Id}}" data-Category="{{item.Category}}" data-Title="{{item.Title}}" >
+              <template is="tmp" data="{{...item}}"/>
+        </view>
+        <view>
+        <view bindtap="clickAddBook" style="margin:20rpx;" >
+                <view class='row' >
+                  <view class='rowBackgroundBox' >
+                    <image class="addIcon" src="../../img/add.png" ></image>
+                  </view>
+                    <view class='rowDesc'>
+                      <text>添加新书</text>
+                      <text>欢迎前往发现区,一切应有可能！</text>
+                    </view>
+                   </view>
+                    <view class="line"></view>
+              </view>
+        </view>
+  </scroll-view>
+</view>
+ 

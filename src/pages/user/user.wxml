@@ -1,0 +1,24 @@
+    <view class="main">
+        <view class="avatar">
+            <image src="{{userInfo.avatarUrl}}" ></image>
+            <view class='title'>{{userInfo.nickName}}<icon hidden='{{(userInfo&&userInfo.nickName)?false:true}}' class="iconfont icon-diamond"></icon></view>
+        </view>
+        <view>
+        <view class="line"/>
+        <view class="content-row" bindtap='goFeedback'>
+            <view>
+               <icon class="iconfont icon-feedback blue"></icon>
+               <text>意见反馈</text>
+            </view>
+            <icon class='iconfont icon-arrowright'></icon>
+        </view>
+          <view class="content-row" bindtap='goAbout'>
+            <view>
+               <icon class="iconfont icon-about green"></icon>
+               <text>关于我</text>
+            </view>
+            <icon size='20' class='iconfont icon-arrowright'></icon>
+        </view>
+        <view class="line"/>
+    </view>
+</view>

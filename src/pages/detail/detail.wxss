@@ -1,0 +1,147 @@
+@import "../share/catelog/catelog.wxss";  
+/*********catelog style*****/
+.container{
+   padding:2px 10px;
+}
+.container .visible{
+  overflow-y: hidden;
+}
+.row {
+   display: flex; 
+   flex-direction: row;
+   justify-content:flex-start;  
+   width:100%;
+   height: 100%;
+   margin:10rpx;
+} 
+.rowIcon
+{
+  width: 170rpx;
+  height: 190rpx; 
+  margin: 10rpx;
+}
+
+.rowDesc{
+   display: flex; 
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 190rpx;
+   width:99%;
+   margin:2rpx;
+}
+.row text{
+  font-size: 12px;
+  margin-top:15rpx;
+  height:12px;
+}
+.btnGroup{
+  display: flex; 
+   flex-direction: row;
+   justify-content:flex-start;  
+   width:100%;
+   height: 100rpx;
+}
+.orange-btn{
+  width:44%;
+  height:80rpx;
+  font-size: 12px;
+  color:orange;
+  border:0.5rpx solid orange;
+  line-height: 80rpx;
+  background-color:white;
+}
+.orange-btn::after {
+  border: 0;
+} 
+.grey{
+  color:#ccc;
+  border:0.5rpx solid #ccc;
+}
+.blue-link{
+    color:cornflowerblue;
+    width:100%;
+    text-align: center;
+    margin:20rpx 0 10rpx 0;
+}
+.desc{
+  font-size:12px;
+  margin:10rpx;
+}
+
+.desc .content{
+  margin-top:20rpx;
+  line-height: 20px;
+}
+.desc .autoHeight{
+  height: auto;
+  overflow-y:auto;
+}
+.desc .limitHeight{
+  height: 40px;
+  overflow-y: hidden;
+}
+
+.linePanel{
+  padding:15rpx;
+  border-bottom:1rpx solid #eee;
+  border-top:1rpx solid #eee;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;  
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.visible{
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.grid {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.grid-cell {
+    flex: 1;
+}
+.grid-cell.u-full {
+    flex: 0 0 100%;
+}
+.grid-cell.u-1of2 {
+    flex: 0 0 50%;
+}
+.grid-cell.u-1of3 {
+    flex: 0 0 33.3333%;
+}
+.grid-cell.u-1of4 {
+    flex: 0 0 25%;
+}
+.icon{
+    width: 170rpx;
+    height: 210rpx; 
+}
+.title{
+  width:170rpx;
+  text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.mg10{
+    margin-top: 10rpx;
+}
+
+
+
+
+
+
+
+

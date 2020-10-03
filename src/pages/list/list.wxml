@@ -1,0 +1,13 @@
+<import src="../share/bookItem/bookItem.wxml"/>
+<import src="../share/selectItem/selectItem.wxml"/>
+<view class='container'>
+  <scroll-view scroll-y="true" style="height: {{windowHeight}}px;" bindscrolltolower="loadMore" >
+        <template is="selectItem" data="{{orderby:orderby,type:type}}"/>
+        <view class="scrollContainer"  wx:for="{{list}}" wx:for-item="item" bindtap="clickDetail" 
+          data-Id="{{item.Id}}" data-Category="{{item.Category}}" data-Title="{{item.Title}}" >
+              <template is="bookItem" data="{{...item}}"/>
+        </view>
+        <view class="loading" hidden="{{hasMore}}">加载中</view>  
+  </scroll-view>
+</view>
+ 

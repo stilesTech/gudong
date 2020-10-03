@@ -1,0 +1,14 @@
+<template name="selectItem">
+    <view class='select'>
+      <view class='mt10'>
+        <button class="selectBtn {{type==0?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{0}}" bindtap='selectType'>全部</button>
+        <button class="selectBtn {{type==1?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{1}}"  bindtap='selectType'>连载</button>
+        <button class="selectBtn {{type==2?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{2}}"  bindtap='selectType'>完结</button>
+      </view>
+      <view>
+        <button class="selectBtn {{orderby==1?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{1}}"  bindtap='selectOrderBy'>按人气</button>
+        <button class="selectBtn {{orderby==2?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{2}}" bindtap='selectOrderBy'>按最新</button>
+        <button class="selectBtn {{orderby==3?'button-hover':''}}" hover-class="none" size='mini' data-Type="{{3}}" bindtap='selectOrderBy'>按收藏</button>
+      </view>
+    </view>
+</template>

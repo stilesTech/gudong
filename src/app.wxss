@@ -1,0 +1,12 @@
+/**app.wxss**/
+ @import "/font/iconfont.wxss"; 
+text{
+    font-family: MicroSoft Yahei;
+    color: #333;
+}
+input{
+    font-family: MicroSoft YaHei;
+}
+.loading{
+  font-size: 12px;
+}

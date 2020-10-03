@@ -1,0 +1,22 @@
+<view class="main">
+  <view class='h3'>关于我</view>
+  <view class='row'>姓名：黄泽庭</view>
+  <view class='row'>英文名称：Stiles</view>
+  <view class='row'>现居：深圳</view>
+  <view class='row'>博客：www.stiles.cc</view>
+  <view class='row'>邮箱：179456286@qq.com</view>
+  <view class='row'>座右铭：Stay Hungry,Stay Foolish</view>
+  <view class='row'>
+  简介：我出生在20世纪90年代.我是一个专注于网络技术的信息技术开发人员，目前就居住于深圳市，从事.NET高级软件工程师职位。
+在业余时间，我喜欢看书，上网，看电影，并在户外悠闲地散步。</view>
+  <view class='row-img'>
+      <image class="icon" src="../../img/mt.png" mode="widthFix"/>
+  </view>
+</view>
+ <view class="content-row-black" bindtap='previewImage' data-ImgUrl="https://api.stiles.cc/image/receivables.png">
+         <view>
+            <icon class="iconfont icon-money"></icon>
+            <text>打赏</text>
+         </view>
+         <icon class='iconfont icon-arrowright'></icon>
+  </view>

@@ -1,0 +1,91 @@
+@import "../share/bookItem/bookItem.wxss";  
+.contains{
+  width:100%;
+  margin-top: 50px;
+  position: relative;
+}
+.searchContains{
+    display: flex;
+    position:fixed;
+    z-index: 999;
+    align-items: center;
+    height: 40px;
+    width:100%;
+    background-color: #515151;
+    padding: 5px 10px;
+    top:0px;
+}
+.searchText{
+   width:90%;
+   height:40px;
+   background-color: #fff;
+   font-size:14px;
+}
+.searchIcon{
+   display: flex;
+   align-items: center;
+   justify-content:center;
+   width:50px;
+   height: 40px;
+   background-color: #fff;
+}
+.searchBtn{
+    width: 90px;
+    color: #f5871f;
+    padding-right: 10px;
+    text-align: center;
+    height: 40px;
+    line-height:  40px;
+}
+.icon-arrowleft{
+    color: #f5871f;
+    padding-right: 10px;
+    text-align: center;
+    height: 40px;
+    line-height:  40px;
+}
+
+.cat{
+  margin: 60px 0px 10px 10px;
+  line-height: 20px;
+  font-size: 14px;
+}
+.cat2,.keys{
+  margin: 10px 0px 10px 10px;
+  line-height: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content:space-between;
+  height:20px;
+}
+
+.cat2 icon,.keys icon{
+  margin:0px 10px 0px auto;
+  height:20px;
+  color: #aaa;
+}
+.key:before{
+  margin-top:20px;
+}
+.keys{
+  border-bottom: 0.5rpx solid #E7E7E7;
+}
+.tagContains{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.tag{
+    padding: 5px 15px;
+    background-color: #eee;
+    color:#2c2c2c;
+    font-size: 12px;
+    margin: 10px;
+    border:0.5rpx solid #E7E7E7;
+}
+.line{
+  background: #e6e6e6;
+  height:40rpx;
+  display: flex;
+  align-items:center;
+}

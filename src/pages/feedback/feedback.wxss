@@ -1,0 +1,16 @@
+.section{
+  margin-top:10px;
+  width:100%;
+}
+textarea{
+  width:98%;
+  line-height: 16px;
+  padding:1%;
+  font-size: 14px;
+  border-top :0.5rpx solid #ccc;
+  border-bottom :0.5rpx solid #ccc;
+}
+button{
+  width:90%;
+  margin-top:10px;
+}

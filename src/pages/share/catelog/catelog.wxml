@@ -1,0 +1,20 @@
+<template name="catelog" >
+  <view class="{{showCatelog?'show':'hide'}}">
+      <view class="catelog-header">
+        <view class='catelog-header-col' >{{title}}</view>
+        <view class='catelog-header-col'>共{{catelogs.length||0}}章</view>
+     </view>
+ 
+      <scroll-view class="catelog" scroll-top="{{0}}" style="height:{{windowHeight-70}}px" scroll-into-view="{{'T'+currentSerialNumber}}"  scroll-y="true" >
+            <view class="column"  wx:for="{{catelogs}}" >
+                  <view id="{{'T'+item.SerialNumber}}"  class="row_item {{currentSerialNumber==item.SerialNumber?'hoverText':''}}" bindtap="toReader"  data-SerialNumber="{{item.SerialNumber}}">第{{item.SerialNumber}}章 {{item.Name}}</view>
+             </view>
+            <view class="catelog-btn">
+              <view class='catelog-btn-col' bindtap='sortCatelog'><icon class='iconfont icon-sorting-o'/>逆序</view>
+              <view class='catelog-btn-col' bindtap='refreshCatelog'><icon class='iconfont icon-refresh'/>刷新</view>
+            </view>
+        </scroll-view>
+        <view class='flag' bindtap="changeShowCatelog"></view>
+  </view>
+</template>
+    

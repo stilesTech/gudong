@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="header">
+    <text>第{{serialNumber}}章 {{name}}</text>
+    <text>{{pageIndex}}/{{pageNum}}</text>
+  </view>
+	<view class="content" style="width: {{pageNum*100+'%'}};-webkit-column-count: {{pageNum}}; column-count: {{pageNum}};left: {{leftValue+'px'}}; background-color:#fff;font-size:{{fontSize+'px'}};line-height:{{lineHeight+'px'}}"  bindtouchstart="handleTouchStart" bindtouchmove="handleTouchMove" bindtouchend="handleTouchEnd">
+		<text>{{content}}</text>
+	</view>
+</view>
+ <import src="../share/catelog/catelog.wxml"/>
+ <template is="catelog" data="{{catelogs:catelogs,showCatelog:showCatelog,title:title,windowHeight:windows.windowsHeight,currentSerialNumber:serialNumber}}"/>

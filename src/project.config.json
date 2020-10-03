@@ -1,0 +1,28 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es7": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wxc84b6d89978ae790",
+	"projectname": "funRead",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

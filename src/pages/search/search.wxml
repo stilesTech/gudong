@@ -1,0 +1,44 @@
+ <import src="../share/bookItem/bookItem.wxml"/>
+<view class="searchContains">
+    <icon class='iconfont icon-arrowleft' bindtap='back' size='16'></icon>
+    <icon class='searchIcon' size='16' type='search'></icon>
+    <input type="text" bindconfirm="search" bindblur="keywordBind" 
+    class="searchText" placeholder="输入书名或者作者名" value='{{keyword}}'/>
+     <view class="searchBtn" bindtap='submit'>搜索</view>
+</view>
+ <view class="contains">
+    <view  hidden="{{hasSearch}}">
+        <view class="cat">   
+            <text>热门搜索</text>
+        </view>
+        <view class="tagContains">
+          <view wx:for="{{tags}}" >
+              <view class="tag" data-Tag="{{item}}" bindtap='tagClick'>{{item}}</view>
+          </view>
+        </view>
+        <view hidden='{{keys.length==0}}'>
+            <view class="line"/>
+              <view class="cat2">   
+                <text>历史记录</text>
+                <icon bindtap='deleteKeys' class='iconfont icon-delete' size='20px'/>
+            </view>
+            <view wx:for="{{keys}}">
+              <view class="keys" bindtap='tagClick' data-Tag="{{item}}">
+                <view>
+                  <icon class='iconfont icon-icon--' size='20px'/>
+                  <text>{{item}}</text>
+                </view>
+                <icon class='iconfont icon-pin' size='20px'/>
+              </view>
+            </view>
+        </view>
+    </view>
+       <scroll-view scroll-y="true" hidden="{{!hasSearch}}" style="height: {{windowHeight}}px;" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+        <view class="scrollContainer"  wx:for="{{list}}" wx:for-item="item" bindtap="clickDetail" 
+          data-Id="{{item.Id}}" data-Category="{{item.Category}}" data-Title="{{item.Title}}" >
+              <template is="bookItem" data="{{...item}}"/>
+        </view>
+        <view class="loading" hidden="{{hasMore}}">加载中...</view>  
+  </scroll-view>
+</view>
+ 

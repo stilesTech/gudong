@@ -1,0 +1,38 @@
+
+<view class="custom">
+         <view class="col4 custom-box" bindtap="toList" data-Cat="Point">
+             <image src="../../img/books.png"  />
+             <text>重点精选</text>
+         </view>
+         <view class="col4 custom-box" bindtap="toList" data-Cat="Boys">
+              <image src="../../img/boy.png"  />
+             <text>男频推荐</text>
+        </view>
+        <view class="col4 custom-box" bindtap="toList" data-Cat="Girls">
+            <image src="../../img/girl.png" />
+            <text>女频推荐</text>
+         </view>
+        <view class="col4 custom-box" bindtap="toList" data-Cat="New">
+            <image src="../../img/ad.png" />
+            <text>最新出版</text>
+        </view>
+     </view>
+     <view class="line">   
+        <icon class='iconfont icon-category'></icon>
+        <text>频道</text>
+     </view>
+     <view class="tag">
+        <view wx:for="{{list}}" class="col3 mg10" bindtap="toList" data-Cat="{{item.Item1}}">{{item.Item2}}         </view>
+     </view>
+  <!-- <view class="line">   
+     <icon class='iconfont icon-girl1 red'></icon>
+     <text>女生</text>
+  </view>
+  <view class="tag">
+     <view class="col3 mg10">玄幻仙侠</view>
+     <view class="col3 mg10">都市异能</view>
+     <view class="col3 mg10">历史风云</view>
+     <view class="col3 mg10">玄幻仙侠</view>
+     <view class="col3 mg10">都市异能</view>
+     <view class="col3 mg10">历史风云</view>
+  </view> -->

@@ -1,0 +1,60 @@
+view{
+  font-size:32rpx;
+}
+.tag{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:60rpx 0rpx;
+}
+
+.custom{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    margin:20rpx;
+}
+.col3{
+    width:33.33%;
+    text-align: center;
+}
+.col4{
+    width:25%;
+    text-align: center;
+}
+.custom-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-box image{
+    display:flex;
+    width:100rpx;
+    height:100rpx;
+    margin:10rpx;
+}
+
+.line{
+  background: #E7E7E7;
+  height:80rpx;
+  display: flex;
+  align-items:center;
+}
+.line icon{
+  font-size:40rpx;
+  margin:0 8rpx 0 20rpx;
+  color: #1296db;
+  line-height: 40rpx;
+}
+.line text{
+  height: 40rpx;
+}
+.line .red{
+  color:#d81e06;
+}
+
+.mg10{
+    margin-top:10px;
+}
